@@ -1,71 +1,186 @@
-
-header {
-  text-align: center;
-  padding: 48px 16px;
-  font-size: 25px;
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+html,
 body {
+  width: 100%;
+  height: 100%;
   font-family: Arial, sans-serif;
-  margin: 26px;
+  background: #fff;
   color: #333;
-  font-size: 35px;
-  line-height: 1.8; /* espaçamento entre linhas */
+  font-size: 22px;
+  line-height: 1.9;
+  overflow-x: hidden;
 }
 
-section {
-  margin-bottom: 80px; /* mais espaço entre as seções */
+/* Container ocupa toda a tela */
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  height: auto;
+  padding: 60px;
+  display: block;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
+/* Conteúdo interno das páginas */
+.content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: #004d99;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 36px;
+}
+
+.navbar a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Página de funcionalidades */
+.funcionalidades {
+  padding-top: 120px; /* espaço abaixo da navbar */
+}
+
+.funcionalidades h1 {
+  font-size: 42px;
+  color: #003366;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.funcionalidades > .content > p {
+  font-size: 22px;
+  margin-bottom: 40px;
+  max-width: 900px;
+  text-align: left;
+  color: #333;
+}
+
+/* Funcionalidades */
 .features-container {
   display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 40px;
 }
 
 .features-list {
   flex: 1;
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
 
-.feature-header {
-  display: flex;
-  align-items: center;
-  gap: 15px;
+.feature {
+  background: #f9f9f9;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-.icon {
+.feature h3 {
+  margin: 15px 0;
+  font-size: 1.8rem;
+  color: #004d99;
+}
+
+.feature .icon {
   font-size: 2rem;
+  margin-right: 10px;
 }
 
 .features-images {
   flex: 1;
   display: flex;
-  flex-direction: row;
-  gap: 90px;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
 }
 
-
-ul, ol {
-  padding-left: 1.5rem;
+.features-images img {
+  width: 350px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
+/* Imagens gerais */
 .img-row {
-  display: flex;           
-  gap: 150px;               
-  justify-content: center; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
   margin-top: 20px;
+}
+
+img {
+  border-radius: 12px;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.logo-img,
+.memo-img {
+  width: 400px;
 }
 
 .home-img,
 .guia-img {
-  width: 470px;
-  height: 1215px; 
-  border-radius: 12px; 
-
+  width: 320px;
 }
 
-.memo-img,
-.logo-img {
-  width: 650px;
-  border-radius: 12px;
+/* Responsivo */
+@media (max-width: 900px) {
+  .container {
+    padding: 30px;
+  }
+
+  .funcionalidades h1 {
+    font-size: 2.2rem;
+  }
+
+  .funcionalidades > .content > p {
+    font-size: 1.2rem;
+  }
+
+  .logo-img,
+  .memo-img {
+    width: 280px;
+  }
+
+  .home-img,
+  .guia-img {
+    width: 250px;
+  }
 }
