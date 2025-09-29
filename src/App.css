@@ -23,19 +23,22 @@ body,
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 60px 20px;
+  padding: 30px 20px 80px;
 }
 
 /* Página com fundo (hero) */
 .page-hero {
-  min-height: 100vh;
+  min-height: calc(100vh - 108px);
   width: 100%;
-  background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
+  background-image: url('./assets/fundo.jpeg');
+}
+
+.description-container {
   display: flex;
-  align-items: center;
-  padding: 100px 20px 60px; /* espaço pra navbar */
+  flex-direction: column;
+  gap: 20px;
 }
 
 /* Navbar */
@@ -99,7 +102,7 @@ body,
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 .features-list {
@@ -154,7 +157,7 @@ body,
   align-items: center;
   gap: 40px;
   flex-wrap: wrap;
-  margin-top: 20px;
+  margin-top: 60px;
 }
 
 img {
@@ -177,7 +180,11 @@ img {
 /* Responsivo */
 @media (max-width: 900px) {
   .container {
-    padding: 30px 15px;
+    padding: 30px 40px 80px;
+  }
+
+  h1 {
+    margin-bottom: 20px;
   }
 
   .funcionalidades h1 {

@@ -1,6 +1,5 @@
 import homeImg from "../assets/home.jpeg";
 import guiaImg from "../assets/guia.jpeg";
-import fundoImg from "../assets/fundo.jpeg";
 
 export default function Funcionalidades() {
   return (

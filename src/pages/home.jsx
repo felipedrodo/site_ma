@@ -1,6 +1,5 @@
 import memoImg from "../assets/memo.jpeg";
 import logoImg from "../assets/logo.jpeg";
-import fundoImg from "../assets/fundo.jpeg";
 
 export default function Home() {
   return (
@@ -8,8 +7,9 @@ export default function Home() {
       className="page-hero"
     >
       <div className="container hero__inner">
-        <div>
-          <h1>Memória Ativa - Aplicativo Estimulador de Memória</h1>
+        <h1>Memória Ativa - Aplicativo Estimulador de Memória</h1>
+        
+        <div className="description-container">
           <p>
             O <strong>Memória Ativa</strong> é um aplicativo criado para estimular e
             treinar a memória de forma personalizada. Mais do que um app, ele é
