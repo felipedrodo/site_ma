@@ -33,6 +33,14 @@ export default function Funcionalidades() {
                 Notificações para compromissos, medicamentos ou tarefas importantes.
               </p>
             </div>
+            <div className="feature">
+              <span className="icon">📝</span>
+              <h3>Diário de Memória</h3>
+              <p>
+                Registre detalhes do seu dia, pensamentos e experiências para treinar a memória 
+                e poder revisitar essas lembranças sempre que quiser.
+              </p>
+            </div>
           </div>
 
           <div className="features-images">
